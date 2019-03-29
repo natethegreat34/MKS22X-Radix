@@ -1,5 +1,5 @@
 
-public class MyLinkedList{
+public class MyLinkedList<E>{
     private Node start;
     private Node end;
     private int length;
@@ -104,9 +104,6 @@ public class MyLinkedList{
         //same as the void add but instead we are getting rid of the next,
         //prev and forming new ones
         Node gat = new Node (null,null, 0);
-        if (index < 0 || index >= length){
-            throw new IndexOutOfBoundsException();
-        }
           // if it's at the beginning the one aftre it become the start
         gat = start;
         start = start.next();
@@ -136,7 +133,6 @@ public class MyLinkedList{
         return length;
     }
     // -------------------------------------------------------------------------
-
 
 
 
