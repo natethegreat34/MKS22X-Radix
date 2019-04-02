@@ -10,6 +10,7 @@ public class Radix{
         return ;
       }
       num = maxd(datl);
+      // System.out.println(num);
       data = datl;
         for(int i = 0; i < 20; i ++){
             pockets[i] = new MyLinkedList();
