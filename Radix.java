@@ -52,10 +52,10 @@ public class Radix{
       // System.out.println("k");
     }
     private static int maxd(int [] datl){
-      int m = datl [0];
+      int m = Math.abs(datl [0]);
       for (int i = 1; i < datl.length; i ++){
-        if (m < datl [i]){
-          m = datl [i];
+        if (m < Math.abs(datl [i])){
+          m = Math.abs(datl [i]);
         }
       }
       int n = 1;
